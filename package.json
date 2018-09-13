@@ -1,0 +1,29 @@
+{
+  "name": "B-Amazon-MySQL",
+  "version": "1.0.0",
+  "description": "Amazon type application that runs on node JS and a MySQL backend # Node.js & MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhwillia7/B-Amazon-MySQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhwillia7/B-Amazon-MySQL/issues"
+  },
+  "homepage": "https://github.com/jhwillia7/B-Amazon-MySQL#readme",
+  "dependencies": {
+    "all": "0.0.0",
+    "cli-table": "^0.3.1",
+    "colors": "file:node_modules/colors",
+    "index": "^0.4.0",
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0",
+    "npm": "^6.4.0"
+  }
+}
