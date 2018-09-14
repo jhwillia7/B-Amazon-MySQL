@@ -38,15 +38,25 @@ If you haven't written a markdown file yet, [click here for a rundown](https://g
    * The first asks you to select the product you would like to buy.
    * The second message asks how many units of the product you would like to buy.
 
+---
 ![Image Initial Customer App Launch](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/Customer_View_initial.PNG)
+---
 
  5. Once you have placed the order, the application checks if the store has enough of the product to meet the request.
 
    * If not, the app logs a phrase like `Insufficient quantity!`, and then prevent the order from going through.
 
+---
+   ![Image Customer Making Purchase Insufficient Qty Shown](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/insufficient_quantity.PNG)
+
+---
+
 8. However, if the store _does_ have enough of the product, we fulfill the your order.
    * This means updating the SQL database to reflect the remaining quantity.
    * Once the update goes through, show the customer the total cost of their purchase.
+
+---
+   ![Image Customer Making Purchase Successfully Cost Shown](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/Customer_Buy_Nike.PNG)
 
 ---
 ### Customer Experience Video
