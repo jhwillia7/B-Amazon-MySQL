@@ -4,13 +4,7 @@ Amazon type application that runs on node JS and a MySQL backend
 
 ## Overview
 
-In this activity, you'll be creating an Amazon-like storefront with the MySQL skills you learned this week. The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.
-
-Make sure you save and require the MySQL and Inquirer npm packages in your homework files--your app will need them for data input and storage.
-
-## Submission Guide
-
-Make sure you use the normal GitHub. Because this is a CLI App, there will be no need to deploy it to Heroku. This time, though, you need to include screenshots, a gif, and/or a video showing us that you got the app working with no bugs. You can include these screenshots or a link to a video in a `README.md` file.
+In this application, you get an Amazon-like storefront with the MySQL. The app takes in orders from customers and depletes stock from the store's inventory. As a bonus the app can track product sales across the store's departments and then provide a summary of the highest-grossing departments in the store.
 
 * Include screenshots (or a video) of typical user flows through your application (for the customer and if relevant the manager/supervisor). This includes views of the prompts and the responses after their selection (for the different selection options).
 
@@ -20,27 +14,12 @@ Make sure you use the normal GitHub. Because this is a CLI App, there will be no
 
 If you haven't written a markdown file yet, [click here for a rundown](https://guides.github.com/features/mastering-markdown/), or just take a look at the raw file of these instructions.
 
-### Submission on BCS
-
-* Please submit the link to the Github Repository!
-
-## Instructions
-
-1. Navigate to the root of your project and run `npm init -y` &mdash; this will initialize a `package.json` file for your project. The `package.json` file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a `package.json` file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project.
-
-2. Make a `.gitignore` file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
-
-```
-node_modules
-.DS_Store
-.env
-```
 
 ### Challenge #1: Customer View (Minimum Requirement)
 
-1. Create a MySQL Database called `bamazon`.
+1. I leverage a MySQL Database called `bamazon`.
 
-2. Then create a Table inside of that database called `products`.
+2. I created a Table inside of that database called `products`.
 
 3. The products table should have each of the following columns:
 
@@ -54,22 +33,22 @@ node_modules
 
    * stock_quantity (how much of the product is available in stores)
 
-4. Populate this database with around 10 different products. (i.e. Insert "mock" data rows into this database and table).
+ 4. Upon launching the bamazonCustomer.js file the app prompts users with two messages.
 
-5. Then create a Node application called `bamazonCustomer.js`. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
+   * The first asks you to select the product you would like to buy.
+   * The second message asks how many units of the product you would like to buy.
 
-6. The app should then prompt users with two messages.
+ 5. Once you have placed the order, the application checks if the store has enough of the product to meet the request.
 
-   * The first should ask them the ID of the product they would like to buy.
-   * The second message should ask how many units of the product they would like to buy.
+   * If not, the app logs a phrase like `Insufficient quantity!`, and then prevent the order from going through.
 
-7. Once the customer has placed the order, your application should check if your store has enough of the product to meet the customer's request.
-
-   * If not, the app should log a phrase like `Insufficient quantity!`, and then prevent the order from going through.
-
-8. However, if your store _does_ have enough of the product, you should fulfill the customer's order.
+8. However, if the store _does_ have enough of the product, we fulfill the your order.
    * This means updating the SQL database to reflect the remaining quantity.
    * Once the update goes through, show the customer the total cost of their purchase.
+
+### Customer Experience Video
+
+https://drive.google.com/file/d/1Avh-fMCkhjeisYv6qhIcQAwTjUk1TxEb/view
 
 - - -
 
