@@ -38,6 +38,8 @@ If you haven't written a markdown file yet, [click here for a rundown](https://g
    * The first asks you to select the product you would like to buy.
    * The second message asks how many units of the product you would like to buy.
 
+![Image Initial Customer App Launch](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/Customer_View_initial.PNG)
+
  5. Once you have placed the order, the application checks if the store has enough of the product to meet the request.
 
    * If not, the app logs a phrase like `Insufficient quantity!`, and then prevent the order from going through.
