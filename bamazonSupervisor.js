@@ -2,11 +2,6 @@
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 var Table = require('cli-table');
-var table = new Table({
-    head: ['Depart ID', 'Dept Name', 'Over Head', 'Product Sales', 'Total Profit'],
-    colWidths: [20, 40, 15, 15, 15]
-});
-
 
 // CLI Text colors I like to use 
 var FgBlue = "\x1b[34m";
@@ -65,6 +60,10 @@ function viewProducts() {
     connection.query(strSQL, function (err, res) {
         // console.log(res);
         if (err) throw err;
+        var table = new Table({
+            head: ['Depart ID', 'Dept Name', 'Over Head', 'Product Sales', 'Total Profit'],
+            colWidths: [20, 40, 15, 15, 15]
+        });
         // display products and price to user with low inventory
         for (var i = 0; i < res.length; i++) {
             table.push([res[i].department_id, res[i].department_name, res[i].over_head_costs, res[i].Total_Sales_By_Dept, res[i].Profit])
