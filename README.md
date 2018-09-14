@@ -1,6 +1,6 @@
 # B-Amazon-MySQL
 Amazon type application that runs on node JS and a MySQL backend
-# Node.js & MySQL
+## Technologies used: Node.js, MySQL, Inquirer, Cli-Table
 
 ## Overview
 
@@ -72,12 +72,32 @@ https://drive.google.com/file/d/1Avh-fMCkhjeisYv6qhIcQAwTjUk1TxEb/view
   * List a set of menu options:
 
     * View Products for Sale
+
+---
+   ![Image Manager View Product For Sale](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/managerview_prod_4sale.PNG)
+
+---
     
     * View Low Inventory
+
+---
+   ![Image Manager View Product with Low Inventory](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/managerview_low_invent.PNG)
+
+---
     
     * Add to Inventory
+
+---
+   ![Image Manager Action Add to Inventory](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/add_to_invetn.PNG)
+
+---
     
     * Add New Product
+
+---
+   ![Image Manager Action Add New Product](https://github.com/jhwillia7/B-Amazon-MySQL/blob/master/images/addnew_prod.PNG)
+
+---
 
   * If you as a manager select `View Products for Sale`, the app will list every available item: the item IDs, names, prices, and quantities.
 
@@ -95,9 +115,3 @@ https://drive.google.com/file/d/15oYwrmHhH86Ov1-B21UEJEYXjfCvYo3w/view
 
 - - -
 
-
-### Add To Your Portfolio
-
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
-
-- - -
